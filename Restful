@@ -1,0 +1,16 @@
+RESTful - Representational State Transfer 表现层状态转化
+
+Resources 是网络上的一个实体，可以是一段文字，一张图片，一首歌曲，一种服务，总是是一个具体的实在。我们用URI (Uniform Resource Identifier) 指向它。要获取这个资源，只需访问URI。URI只代表 resources 的位置，它的具体表现，应该在HTTP请求的头信息中用Accept和Content-Type字段指定，这两个字段是对表现层 (Representation) 的描述。
+
+访问一个网站，就代表了客户端和服务器的一个互动过程。在这个过程中，势必涉及到数据和状态的变化。
+
+互联网通信协议HTTP协议是一个无状态协议。这意味着，所有的状态都保存在服务器端。因此，如果客户端想要操作服务器，必须通过某种手段，让服务器端发生“状态转化 (State Transfer)”，而这种转化是建立在表现层上的，所以就是“表现层状态转化”
+
+客户端用到的手段，只能是HTTP协议：
+
+HTTP四个基本操作 | 描述
+--- | ---
+GET | 获取资源
+POST | 新建资源
+PUT | 更新资源
+DELETE | 删除资源
