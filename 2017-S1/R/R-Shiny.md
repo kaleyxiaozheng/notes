@@ -6,6 +6,7 @@
 4. Use R scripts and data
 5. Use reactive expressions
 6. Sharing your apps
+7. ggmap, ggplot2, maps
 
 ---
 
@@ -577,3 +578,25 @@ runUrl("<the weblink>")
 ```java
 runGitHub( "<your repository name>", "<your user name>")
 ```
+
+> ### ggmap, ggplot2, maps
+```javascript
+  library(ggmap)
+  library(ggplot2)
+  library(maps)
+  data <- read.csv("xxx.csv", header=T)
+  head(data)
+  names(data)                      // display headers
+  names(data)[4] <- "MobileHomes"  // change the name of the fourth header as MobileHomes
+  names(data)                      // display headers
+
+  // group the Mobile Home data by State, calculating the average
+  ag <- aggregate(MobileHomes ~ States, FUN = mean, data = data)
+  // 1. "MobileHomes ~ States" means group the Mobile Home data by state
+  // 2. "FUN = mean" means calculate their average
+
+  head(ag)
+  dim(ag)  // return 51 items, 2 headers
+  rm(ag[1])
+```
+
