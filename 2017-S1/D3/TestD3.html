@@ -1,0 +1,43 @@
+<html>
+
+<head></head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8">
+    </script>
+    <script type="text/javascript">
+        var w = 5000;
+        var h = 1000;
+        var dataset([30, 300, 3000]); <
+        svg width = "720"
+        height = "120" >
+            <
+            circle cx = "40"
+        cy = "60"
+        r = "10" > < /circle> <
+            circle cx = "80"
+        cy = "60"
+        r = "10" > < /circle> <
+            circle cx = "120"
+        cy = "60"
+        r = "10" > < /circle> <
+            /svg>
+
+        <
+        script >
+            var circle = d3.selectAll("circle");
+        circle.data([30, 300, 3000]);
+        circle.attr("r", function(d) {
+            return Math.sqrt(d);
+        });
+        circle.attr("cx", function(d) {
+            return Math.sqrt(d * 100);
+        })
+        circle.style("fill", function() {
+            return "hsl(" + Math.random() * 360 +
+                ",100%,50%)";
+        })
+    </script>
+</body>
+
+</html>
