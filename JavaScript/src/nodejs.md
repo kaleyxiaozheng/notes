@@ -107,5 +107,4 @@ Rename files | fs.rename()
 > **Update Files**
 >> The `fs.appendFile()` method appends the specified content at the end of the specified file.
 
->> the `fs.writeFile()` method replaces the specified file and content.
-
+>> the `fs.writeFile()` method replaces the specified file and content
