@@ -109,3 +109,43 @@ Rename files | fs.rename()
 
 >> the `fs.writeFile()` method replaces the specified file and content.
 
+### The Build-in URL Module
+> The URL module splits up a web address into readable parts.
+ 
+> `var url = require('url');` to include the URL module.
+
+> Parse an address with the `url.parse()` method, and it will return a URL object with each part of the address as properties.  
+
+### Node.js NPM
+> **What is NPM?**
+>> * NPM - Node.js package manager 
+>> * [NPM download](http://www.npmjs.com)
+>> * The NPM program is installed on your computer when you install Node.js
+
+> **What is a Package?**
+>> * A package in Node.js contains all the files you need for a module.
+>> * Modules are JavaScript libraries you can include in your project.
+
+> **Download the Package**
+>> Open the terminal and tell NPM to download the package you want.
+>> Like downloading the package called "upper-caes": `npm install upper-case`
+>> After downlaoding and intalling, a folder named "node_modules" is created, where the package will be placed. 
+
+> **Using a Package**
+>> `var uc = require('upper-case');`
+
+```javascript
+var http = require('http');
+var uc = require('upper-case');
+http.createServer(function(req, res){
+    res.writeHeader(200, {'Content-Type': 'text/html'});
+    res.write(uc("Hello World!"));
+    res.end();
+}).listen(3333);
+
+node demo_uppercase.js
+```
+> display: HELLO WORLD!
+
+### Node.js Events
+> Node.js have a built-in module, 
