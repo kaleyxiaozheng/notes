@@ -148,4 +148,144 @@ node demo_uppercase.js
 > display: HELLO WORLD!
 
 ### Node.js Events
-> Node.js have a built-in module, 
+> Node.js have a built-in module, called "**Events**", where you can create-, fire-, and listen for- your own events.
+
+> To include the built-in Events module use the `require()` method. In addition, all event properties and methods are an instance of an EventEmitter object. To be able to access these properties and methods, create an EventEmitter object;
+```javascript
+var events = require('events');
+var eventEmitter = new events.EventEmitter();
+```
+
+> You can assign event handlers to your own events with the EventEmitter object.
+
+> To fire an event, use the `emit()` method
+
+```javascript
+var events = require('events');
+var eventEmitter = new events.EventEmitter();
+
+// Create an event handler
+var myEventHandler = function(){
+    console.log('I hear a scream!');
+}
+
+// Assign the event handler to an event
+eventEmitter.on('scream', myEventHandler);
+
+// Fire the 'scream' event
+eventEmitter.emit('sream');
+```
+
+### Node.js Upload Files
+> A very good module for working with file uploads, called "**Formidable**"
+
+> The Formidable module can be downloaded and installed using NPM
+```javascript
+NPM formidable
+NPM install formidable
+
+var formidable = require('formidable');
+```
+
+#### Upload file
+> After installing the Formidable module, you are ready to make a web page in Node.js that lets the user upload files to your computer.
+
+> 1. Create an Upload Form
+>> Create a Node.js file that writes an HTML form, with an upload field
+
+```javascript
+// This code will produce an HTML form
+
+var http = require('http');
+http.createServer(function(req, res){
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write('<form action="fileupload" method="post" enctype="multipart/form-data">');
+    res.write('<input type="file" name="filetoupload"><br>');
+    res.write('<input type=""submit>');
+    res.write('</form>');
+    return res.end();
+}).listen(3333);
+```
+
+> 2. Parse the Uploaded File
+>> Include the Formidable module to be able to parse the uploaded file once it reaches the server.
+
+>> When the file is uploaded and parsed, it gets placed on a temporary folder on your computer
+
+```javascript
+// The file will be uploaded, and placed on a temporary folder
+
+var http = require('http');
+var formidable = require('formidable');
+
+http.createServer(function(req, res){
+    if(req.url == '/fileupload'){
+        var form = new formidable.IncomingForm();
+        form.parse(req, function(err, fields, files){
+            res.write('File uploaded');
+            res.end();
+        });
+    } else {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write('<form action="fileupload" method="post" enctype="multipart/form-data">');
+        res.write('<input type="file" name="filetoupload"><br>');
+        res.write('<input type=""submit>');
+        res.write('</form>');
+        return res.end();
+    }
+}).listen(3333);
+```
+
+> 3. Save the File
+>> When a file is successfully uploaded to the server, it is placed on a temporary folder.
+
+>> The path to this directory can be found in the "files" object, passed as the second argument in the `parse()` method's callback function.
+
+>> To move the file to the folder of your choice, use the File System module, and rename the file
+
+```javascript
+// Include the fs module, and move the file to the current folder
+var http = require('http');
+var formidable = require('formidable');
+var fs = require('fs');
+
+http.createServer(function(req, res){
+    if(req.url == '/fileupload'){
+        var form = new formidable.IncomingForm();
+        form.parse(req, function(err, fields, files){
+            var oldpath = files.filetoupload.path;
+            var newpath = 'c:/users/your name' + files.filetoupload.name;
+            fs.rename(oldpath, newpath, function(err){
+                if(err) throw err;
+                res.write('File uploaded and moved');
+                res.end();
+            }
+        });
+    } else {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write('<form action="fileupload" method="post" enctype="multipart/form-data">');
+        res.write('<input type="file" name="filetoupload"><br>');
+        res.write('<input type=""submit>');
+        res.write('</form>');
+        return res.end();
+    }
+}).listen(3333);
+```
+
+### Node.js Send an Email
+> The **Nodemailer** module makes it easy to send emails from your computer
+```javascript
+npm install nodemailer
+
+var nodemailer = require('nodemailer');
+```
+
+> To send HTML formatted text in your email, use the "html" proerty instead of the "text" property
+```javascript
+var mailOptions = {
+    from: 'youremail@gmail.com',
+    to: 'myfriend@gmail.com',
+    subject: 'Sending Email using Node.js',
+    html: '<h1>Welcome</h1><p>That was easy</p>'
+}
+```
