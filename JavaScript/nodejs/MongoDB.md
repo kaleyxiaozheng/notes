@@ -33,9 +33,7 @@
 
 > To select data from a table in MongoDB, we can also use the `find() method.
 
-> The find() method returns all occurrences in the selection.
-
-The first parameter of the find() method is a query object. In this example we use an empty query object, which selects all records in a table.
+> The `find()` method returns all occurrences in the selection. The first parameter of the `find()` method is a query object. Use an empty query object, which selects all records in a table.
 
 ### Query
 
