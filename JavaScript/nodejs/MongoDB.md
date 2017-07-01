@@ -31,7 +31,7 @@
 
 > The `findOne()` method returns the first occurrence in the selection. The first parameter of the `findOne()` method is a query object. Use an empty query object, which selects all records in a table (but returns only the first record)
 
-> To select data from a table in MongoDB, we can also use the `find() method.
+> To select data from a table in MongoDB, we can also use the `find()` method.
 
 > The `find()` method returns all occurrences in the selection. The first parameter of the `find()` method is a query object. Use an empty query object, which selects all records in a table.
 
