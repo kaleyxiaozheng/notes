@@ -1,0 +1,63 @@
+div.ex {
+    background-color: #e5eecc;
+    padding: 7px;
+    border: solid 1px #c3c3c3;
+}
+
+#div1,
+#div2,
+#div3 {
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+
+#div1 {
+    background-color: lightcoral;
+}
+
+#div2 {
+    background-color: lightseagreen;
+}
+
+#div3 {
+    background-color: lightgreen;
+}
+
+#panel,
+div#slideDown,
+div#slideUp,
+div#slideToggle {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eeff;
+    border: solid, 1px #c3c3c3;
+}
+
+#Panel {
+    padding: 5px;
+    display: none;
+}
+
+#animation1 {
+    background: #98bf21;
+    height: 100px;
+    width: 160px;
+    position: absolute;
+}
+
+#stop_txt,
+#panel_txt {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+#panel_txt {
+    padding: 50px;
+    display: none;
+}
