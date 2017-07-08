@@ -93,3 +93,5 @@ several important methods for working with dimensions |
 `outerWidth(true)` |  returns the width of an element (includes padding, border, and margin)
 `outerHeight(true)` |  returns the height of an element (includes padding, border, and margin)
 
+> 
+
