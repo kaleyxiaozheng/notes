@@ -77,3 +77,55 @@ $("button#btn17").click(function() {
 $("button#btn18").click(function() {
     $("p").remove("#p1, #p2");
 });
+
+$("button#btn19").click(function() {
+    $("h1, h2, #p3, #p4").addClass("blue");
+    $("div#txt10").addClass("important");
+    //$("div#txt11").addClass("important blue");
+});
+
+$("button#btn20").click(function() {
+    $("h1, h2, #p3, #p4").removeClass("blue");
+    $("div#txt10").removeClass("important");
+});
+
+$("button#btn21").click(function() {
+    $("h1, h2, #p3, #p4").toggleClass("blue");
+    $("div#txt10").toggleClass("important");
+});
+
+$("button#btn22").click(function() {
+    alert("Background color = " + $("#p5, #p6, #p7").css("background-color"));
+});
+
+$("button#btn23").click(function() {
+    //$("#p5, #p6, #p7, #p8").css("background-color", "yellow");
+    $("#p5, #p6, #p7, #p8").css({ "background-color": "yellow", "font-size": "200%" });
+});
+
+$("button#btn24").click(function() {
+    var txt = "";
+    var origTxt = $("div#txt13");
+    txt += "Width of div: " + origTxt.width() + "</br>";
+    txt += "Height of div: " + origTxt.height() + "</br>";
+    txt += "Inner width of div: " + origTxt.innerWidth() + "</br>";
+    txt += "Inner height of div: " + origTxt.innerHeight() + "</br>";
+    txt += "Outer width of div: " + origTxt.outerWidth() + "</br>";
+    txt += "Outer height of div: " + origTxt.outerHeight() + "</br>";
+    txt += "Outer hidth (+ margin) of div: " + origTxt.outerWidth(true) + "</br>";
+    txt += "Outer height (+ margin) of div: " + origTxt.outerHeight(true) + "</br>";
+    origTxt.html(txt);
+});
+
+$("button#btn25").click(function() {
+    var txt = "";
+    txt += "Document width/height: " + $(document).width();
+    txt += "x" + $(document).height() + "\n";
+    txt += "Window width/height: " + $(window).width();
+    txt += "x" + $(window).height();
+    alert(txt);
+});
+
+$("button#btn26").click(function() {
+    $("div#txt_last").width(500).height(500);
+});

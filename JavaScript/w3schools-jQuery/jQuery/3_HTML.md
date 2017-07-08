@@ -62,14 +62,34 @@ Two methods | Description
 `remove()` | Removes the selected element (and its child elements)
 `empty()` | Removes the child elements from the selected element
 
-> The jQuery remove() method also accepts one parameter, which allows you to filter the elements to be removed.
-
-The parameter can be any of the jQuery selector syntaxes
+> The jQuery `remove()` method also accepts one parameter, which allows you to filter the elements to be removed. The parameter can be any of the jQuery selector syntaxes
 
 #### 5. Css Classes
+> jQuery has several methods for CSS manipulation.
 
+methods | description
+-- | --
+`addClass()` | Adds one or more classes to the selected elements
+`removeClass()` | Removes one or more classes from the selected elements
+`toggleClass()` | Toggles between adding/removing classes from the selected elements
+`css()` | Sets or returns the style attribute
 
 #### 6. css()
-
+methods | description
+-- | --
+`css()` | Sets or returns one or more style properties for the selected elements
 
 #### 7. Dimensions
+
+![jQuery Dimensions](https://www.w3schools.com/jquery/img_jquerydim.gif)
+several important methods for working with dimensions |
+-- |
+`width()` | sets or returns the width of an element (excludes padding, border and margin)
+`height()` | sets or returns the height of an element (excludes padding, border and margin)
+`innerWidth()` | returns the width of an element (includes padding)
+`innerHeight()` | returns the height of an element (includes padding)
+`outerWidth()` | returns the width of an element (includes padding and border)
+`outerHeight()` | returns the height of an element (includes padding and border)
+`outerWidth(true)` |  returns the width of an element (includes padding, border, and margin)
+`outerHeight(true)` |  returns the height of an element (includes padding, border, and margin)
+
