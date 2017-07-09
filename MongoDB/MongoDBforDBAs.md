@@ -12,26 +12,20 @@ lsof -i tcp:27001
 ps -ef | grep mongod
 
 ### Week 1 - Introduction
-> Deal with complex structured, unstructured data
-
 > MongoDB is document-orientated - JSON
 
 > There are 6 types in JSON
 
-> **types**
-  >> strings
+types |
+-- |
+strings |
+numbers |
+booleans |
+null |
+arrays |
+objects/documents |
 
-  >> numbers
-
-  >> booleans
-
-  >> null
-
-  >> arrays
-
-  >> objects/documents
-
-  > Start MongoDB server
+> Start MongoDB server
   ```javascript
     mongod
   ```
