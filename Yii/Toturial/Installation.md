@@ -1,3 +1,5 @@
+**[Installation](https://www.tutorialspoint.com/yii/yii_installation.htm)**
+
 Step | Explanation | Command
 -- | -- | --
 1 | Find a suitable directory in your hard drive and download the Composer PHAR (PHP archive) | `curl -sS https://getcomposer.org/installer | php`

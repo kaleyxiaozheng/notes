@@ -1,6 +1,8 @@
+**[Create Page](https://www.tutorialspoint.com/yii/yii_create_page.htm)**
+
 > To create a page, we **must** create an `action` and a `view`
 
-> **Actions** are declared in controllers. The end user will receive the execrtion result of an action.
+> **Actions** are declared in controllers. The end user will receive the execution result of an action.
 
 > **View** is a script that generates a response's content. 
 
