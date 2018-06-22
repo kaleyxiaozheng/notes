@@ -36,8 +36,10 @@ It is important for us to trust in Jehovah both in good times and in bad
 ### 5.What situations today test our trust in Jehovah?
 > King Hezekiah always put God first in everything he did. Hezekiah "held fast to the Lord and did not stop following him". (**_[2 Kings 18:6-7](https://www.jw.org/en/publications/bible/study-bible/books/2-kings/18/)_**)
 
-> When bad things happened to me, or somethings worried me, I would pray firstly.
+> Situations like:
+* Relatives or friends laugh at my belief in Jehovah.
+* Lose hope about future and life.
+* The relationship with families, friends, or other people is getting worse, and still don't know how to fix it.
+* Be under the great pressure of life.
 
-> Then I should trust in Jehovah and keep telling me that Jehovah will help me.
-
-> It is important to **obey Jehovah in life**.
+> All situations above will test my trust in Jehovah, cause decisions I made may drag me away from Jehovah, or I may be sad or disappointed if my relatives or friends laughed at my belief in Jehovah. 
