@@ -1,4 +1,4 @@
-_Video: O Jehovah...I Trust in You_
+_[Video: O Jehovah...I Trust in You](https://www.youtube.com/watch?v=HBk1Cm6RkY4)_
 
 It is important for us to trust in Jehovah both in good times and in bad
 ===
