@@ -6,7 +6,7 @@ Aging population | 人口老龄化
 Aging society | 老龄化社会
 Demographic trend | 人口趋势
 Life expectancy | 寿命
-Extended life, logevity | 更久的寿命
+Extended life / logevity | 更久的寿命
 Live longer lives | 人们活得更久
 
 The extension of life expectancy
@@ -20,6 +20,7 @@ senior citizens |
 
 
 论点：
+
 Negative | Positive | Solution
 --|--|--
 Deteriorating health condition 健康状况每况愈下 | More peaceful world 老年人更peaceful | Postpone / delay retirement 推迟退休年龄
