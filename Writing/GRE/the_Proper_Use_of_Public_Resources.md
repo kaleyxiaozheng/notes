@@ -1,3 +1,9 @@
-Someone asserts that using public resources to support the arts is unjustifiable in a society where some people go without food, jobs, and basic survival skills. **da It might**  
+Someone asserts that using public resources to support the arts is unjustifiable in a society where some people go without food, jobs, and basic survival skills. **It might be tempting to agree with the notion on the basis that art is not a fundamental human need. However**, the notion overlooks certain economic and other societal benefits that accure when government assumes an active role in supporting the arts.
 
-`It might byg agoiej `
+There are two compelling arguments that public support for the arts is desirable, whether or not unemplayment and hunger have been eliminated, **One such argument is that** by allocating public resources to the arts we actually help to solve these social problems. **Consider** Canada's film industry, which is heavily subsidised by the Canadian government, and which provides countless jobs for film-industry workers as a result. This incentive has sparked a boon for the Canadian economy, **Thereby** stimulating job growth and wealth that can be applied toward education, job training, and social programs. 
+
+**A second argument has to do with the function and ultimate objectives of art.** Art serves to lift the human spirit and to put us more in touch with our feelings, foibles, and fate-**in short**, with our own humanity. With a heightened sensitivity to the human condition, we become more others-oriented, less-centred, more giving of ourselves. **In other words**, we become a more charitable society-more willing to give to those less fortunate than ourselves in the ways with which someone is concerned.
+
+**In sum**, public resources allocated to the arts create jobs for artists and others whose livelihood depends on a vibrant,rich culture-just the sort of culture that breeds charitable concern for the hungry, the helpless, and the hapless.
+
+`total: 287 words`
