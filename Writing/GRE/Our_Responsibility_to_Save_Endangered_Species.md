@@ -8,3 +8,4 @@ What are the limits of our duty to save endangered species from extinction? **Th
 
 **In sum**, the issue of endangered-species protection is a complex one. Thus, there are no easy or certain answers. Yet it is for this very reason I agree that economic self-interest should take precedence over vague notions about moral duty when it comes to saving endangered species.
 
+total: 280 words
